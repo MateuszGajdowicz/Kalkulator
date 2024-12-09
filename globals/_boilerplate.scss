@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(237, 138, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.CalcContainer{
+    width: 30%;
+    height: 90%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 6px white solid;
+    background-color: rgb(174, 167, 167);
+    background-image: url('../Kalkulator/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsb2ZmaWNlM19jdXRlX2NhdF9kcmVhbXlfd2FsbHBhcGVyX2NhcnRvb25faWxsdWlzdHJhdGlvbl9lOTg2ZGQ0NC04Njk0LTQ1MTYtODk5MS1lNjRkYzRlNTYxZjZfMS5qcGc.jpg');
+    box-shadow: var(--shadow2);
+    background-size: cover; /* Dopasowanie obrazu do ekranu */
+    background-position: center; /* Wyśrodkowanie obrazu */
+    background-repeat: no-repeat; /* Zapobieganie powtarzaniu obrazu */
+    .screen{
+        width: 90%;
+        height: 10%;
+        background-color: beige;
+        position: absolute;
+        top:10%;
+        display: flex;
+        border-radius: 15px;
+        border: black 5px solid;
+        align-items: center;
+        justify-content: end;
+        font-size: 2.5em;
+        overflow: hidden;
+    }
+}
+.ButtonContainer{
+    position: relative;
+    top: 45%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr; /* Trzy kolumny o równej szerokości */
+    gap: 1vw;
+    width: 90%;
+    height: 50%;
+    .Buttons{
+        font-size: 180%;
+        width: clamp(40px, 10vw, 80px); /* Minimalna, względna i maksymalna szerokość */
+        height: clamp(40px, 10vw, 80px); /* Minimalna, względna i maksymalna wysokość */
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-color: beige;
+    }
+    #Button11{
+        background-color: rgb(145, 19, 150);
+    }
+    #Button5,#Button10,#Button15,#Button20{
+        background-color: rgb(230, 159, 218);
+    }
+
+}
